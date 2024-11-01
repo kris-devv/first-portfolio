@@ -9,7 +9,7 @@ html, body {
     scrollbar-width: none;
     margin: 0;
     padding: 0;
-    background-color: #D9D9D9;
+    background-color: #207AB3;
 }
 
 /* Pierwsza sekcja (informacje) */
@@ -20,6 +20,7 @@ html, body {
     display: flex;
     padding: 30px;
     min-height: 700px;
+    color: white;
 }
 
 /* Basic opis */
@@ -49,6 +50,7 @@ html, body {
 #image img {
     width: 100%;
     border-radius: 50%;
+    box-shadow: 1px 4px 20px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Druga sekcja (hobby) */
@@ -61,7 +63,8 @@ html, body {
     display: flex;
     padding: 50px;
     min-height: 500px;
-    background-color: #98AFC7;
+    background-color: #F6F6F6;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
 }
 
 .hobby {
@@ -74,6 +77,7 @@ html, body {
 .hobby img {
     height: 250px;
     border-radius: 50%;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Trzecia sekcja (kontakt) */
@@ -84,6 +88,7 @@ html, body {
     justify-content: space-around;
     display: flex;
     min-height: 300px;
+    color: white;
 }
 
 #email {
@@ -108,4 +113,5 @@ html, body {
 .social img {
     height: 100px;
     border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
