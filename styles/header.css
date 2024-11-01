@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    margin: 0;
+    height: 100px;
+    background-color: #98AFC7;
+}
+
+#logo {
+    margin: auto;
+    margin-left: 48px;
+    height: 60%;
+}
+
+/* Nawigacja */
+#topnav {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-right: 64px;
+    height: 60px;
+}
+
+/* 'Przycisk' nawigacji */
+#topnav a {
+    position: relative;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    color: azure;
+}
+
+/* Pogrubienie aktywnej strony */
+#topnav a.active {
+    font-weight: bold;
+}
+
+/* Kropka pod aktywną stroną */
+#topnav a.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 8px; height: 8px;
+    background-color: azure;
+}
+
+.hover-underline-animation {
+    position: relative;
+    display: inline-block;
+  }
+
+/* Animacja po najechaniu na element navbar */
+.hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 50%;
+    display: block;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    height: 2px; width: 0;
+    background: none repeat scroll 0 0 transparent;
+    background: azure;
+}
+  
+.hover-underline-animation:hover::after {
+    left: 0; 
+    width: 100%; 
+}
